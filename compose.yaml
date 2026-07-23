@@ -1,0 +1,29 @@
+services:
+  node:
+    image: node:22-alpine
+    working_dir: /app
+    user: "${DOCKER_UID:-1000}:${DOCKER_GID:-1000}"
+    environment:
+      HOME: /tmp
+      npm_config_update_notifier: "false"
+    volumes:
+      - .:/app
+
+  symbols:
+    build: ./symbol-tool
+    user: "${DOCKER_UID:-1000}:${DOCKER_GID:-1000}"
+    working_dir: /app
+    environment:
+      HOME: /tmp
+    volumes:
+      - .:/app
+
+  testsite:
+    build:
+      context: .
+      dockerfile: test-site/Dockerfile
+    user: "${DOCKER_UID:-1000}:${DOCKER_GID:-1000}"
+    volumes:
+      - .:/app
+    ports:
+      - "8001:8000"

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WASM Profiler</title>
+    <script type="module" src="./index.ts"></script>
+  </head>
+  <body class="w-72 bg-neutral-900 text-neutral-100 text-sm">
+    <div class="p-3 space-y-3">
+      <h1 class="font-semibold text-base">WASM Profiler</h1>
+      <div id="status" class="text-neutral-400">Connecting…</div>
+      <label class="flex items-center justify-between gap-2">
+        <span class="text-neutral-400">Sampling interval</span>
+        <select id="sample-interval" class="rounded bg-neutral-800 px-2 py-1 text-neutral-100 disabled:opacity-40"></select>
+      </label>
+      <div class="grid grid-cols-2 gap-2">
+        <button id="start-sampling" disabled class="rounded bg-emerald-700 px-2 py-1.5 disabled:opacity-40">Start sampling</button>
+        <button id="stop-sampling" disabled class="rounded bg-rose-800 px-2 py-1.5 disabled:opacity-40">Stop sampling</button>
+        <button id="start-tracing" disabled class="rounded bg-emerald-900 px-2 py-1.5 disabled:opacity-40">Start tracing</button>
+        <button id="stop-tracing" disabled class="rounded bg-rose-900 px-2 py-1.5 disabled:opacity-40">Stop tracing</button>
+      </div>
+      <button id="open-viewer" class="w-full rounded bg-neutral-700 px-2 py-1.5">Open viewer</button>
+    </div>
+  </body>
+</html>

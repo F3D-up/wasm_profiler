@@ -1,0 +1,90 @@
+{
+  "filename": "profiler_fixture.wasm",
+  "hash": "88e10b7835c3f1ab9a6c0d67e4fabf18472f78cff34065e028b212ba71e21e41",
+  "functionCount": 14,
+  "symbolQuality": "debug",
+  "symbols": {
+    "0": {
+      "name": "profiler_fixture::rare_brief",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture10rare_brief",
+      "source": "src/lib.rs",
+      "line": 64
+    },
+    "1": {
+      "name": "profiler_fixture::heavy",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture5heavy",
+      "source": "src/lib.rs",
+      "line": 50
+    },
+    "2": {
+      "name": "profiler_fixture::pass_a",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture6pass_a",
+      "source": "src/lib.rs",
+      "line": 87
+    },
+    "3": {
+      "name": "work",
+      "source": "src/lib.rs",
+      "line": 70
+    },
+    "4": {
+      "name": "profiler_fixture::pass_b",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture6pass_b",
+      "source": "src/lib.rs",
+      "line": 92
+    },
+    "5": {
+      "name": "profiler_fixture::pass_c",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture6pass_c",
+      "source": "src/lib.rs",
+      "line": 97
+    },
+    "6": {
+      "name": "profiler_fixture::chain_b",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture7chain_b",
+      "source": "src/lib.rs",
+      "line": 34
+    },
+    "7": {
+      "name": "profiler_fixture::chain_c",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture7chain_c",
+      "source": "src/lib.rs",
+      "line": 25
+    },
+    "8": {
+      "name": "profiler_fixture::hot_step",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture8hot_step",
+      "source": "src/lib.rs",
+      "line": 11
+    },
+    "9": {
+      "name": "profiler_fixture::tiny_hot",
+      "mangled": "_RNvCsafUhgGvmfqE_16profiler_fixture8tiny_hot",
+      "source": "src/lib.rs",
+      "line": 59
+    },
+    "10": {
+      "name": "benchmark",
+      "source": "src/lib.rs",
+      "line": 103
+    },
+    "11": {
+      "name": "chain_a",
+      "source": "src/lib.rs",
+      "line": 39
+    },
+    "12": {
+      "name": "fib",
+      "source": "src/lib.rs",
+      "line": 2
+    },
+    "13": {
+      "name": "hot_loop",
+      "source": "src/lib.rs",
+      "line": 16
+    }
+  },
+  "sources": [
+    "src/lib.rs"
+  ]
+}

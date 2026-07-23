@@ -1,0 +1,531 @@
+{
+  "filename": "profiler_fixture.debug.wasm",
+  "hash": "6730f703d655154ff7919b97b4cc16c40f7759d4b33d40a68246ca6982f68b71",
+  "functionCount": 88,
+  "symbolQuality": "debug",
+  "symbols": {
+    "0": {
+      "name": "core::hint::unreachable_unchecked::precondition_check",
+      "mangled": "_RNvNvNtCskGMzdWn1DGZ_4core4hint21unreachable_unchecked18precondition_checkCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/ub_checks.rs",
+      "line": 68
+    },
+    "1": {
+      "name": "<i32 as core::iter::range::Step>::forward_unchecked",
+      "mangled": "_RNvXsI_NtNtCskGMzdWn1DGZ_4core4iter5rangelNtB5_4Step17forward_uncheckedCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/range.rs",
+      "line": 197
+    },
+    "2": {
+      "name": "<i64 as core::iter::range::Step>::forward_unchecked",
+      "mangled": "_RNvXsM_NtNtCskGMzdWn1DGZ_4core4iter5rangexNtB5_4Step17forward_uncheckedCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/range.rs",
+      "line": 197
+    },
+    "3": {
+      "name": "profiler_fixture::rare_brief",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture10rare_brief",
+      "source": "src/lib.rs",
+      "line": 64
+    },
+    "4": {
+      "name": "profiler_fixture::heavy",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture5heavy",
+      "source": "src/lib.rs",
+      "line": 50
+    },
+    "5": {
+      "name": "profiler_fixture::pass_a",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture6pass_a",
+      "source": "src/lib.rs",
+      "line": 87
+    },
+    "6": {
+      "name": "work",
+      "source": "src/lib.rs",
+      "line": 70
+    },
+    "7": {
+      "name": "profiler_fixture::pass_b",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture6pass_b",
+      "source": "src/lib.rs",
+      "line": 92
+    },
+    "8": {
+      "name": "profiler_fixture::pass_c",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture6pass_c",
+      "source": "src/lib.rs",
+      "line": 97
+    },
+    "9": {
+      "name": "profiler_fixture::chain_b",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture7chain_b",
+      "source": "src/lib.rs",
+      "line": 34
+    },
+    "10": {
+      "name": "profiler_fixture::chain_c",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture7chain_c",
+      "source": "src/lib.rs",
+      "line": 25
+    },
+    "11": {
+      "name": "profiler_fixture::hot_step",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture8hot_step",
+      "source": "src/lib.rs",
+      "line": 11
+    },
+    "12": {
+      "name": "profiler_fixture::tiny_hot",
+      "mangled": "_RNvCskU2CxCkayPT_16profiler_fixture8tiny_hot",
+      "source": "src/lib.rs",
+      "line": 59
+    },
+    "13": {
+      "name": "benchmark",
+      "source": "src/lib.rs",
+      "line": 103
+    },
+    "14": {
+      "name": "chain_a",
+      "source": "src/lib.rs",
+      "line": 39
+    },
+    "15": {
+      "name": "fib",
+      "source": "src/lib.rs",
+      "line": 2
+    },
+    "16": {
+      "name": "hot_loop",
+      "source": "src/lib.rs",
+      "line": 16
+    },
+    "17": {
+      "name": "<core::ops::range::Range<i32> as core::iter::traits::collect::IntoIterator>::into_iter",
+      "mangled": "_RNvXNtNtNtCskGMzdWn1DGZ_4core4iter6traits7collectINtNtNtB8_3ops5range5RangelENtB2_12IntoIterator9into_iterCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/traits/collect.rs",
+      "line": 322
+    },
+    "18": {
+      "name": "<core::ops::range::Range<i64> as core::iter::traits::collect::IntoIterator>::into_iter",
+      "mangled": "_RNvXNtNtNtCskGMzdWn1DGZ_4core4iter6traits7collectINtNtNtB8_3ops5range5RangexENtB2_12IntoIterator9into_iterCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/traits/collect.rs",
+      "line": 322
+    },
+    "19": {
+      "name": "<core::ops::range::Range<i32> as core::iter::range::RangeIteratorImpl>::spec_next",
+      "mangled": "_RNvXs3_NtNtCskGMzdWn1DGZ_4core4iter5rangeINtNtNtB9_3ops5range5RangelENtB5_17RangeIteratorImpl9spec_nextCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/range.rs",
+      "line": 899
+    },
+    "20": {
+      "name": "<core::ops::range::Range<i64> as core::iter::range::RangeIteratorImpl>::spec_next",
+      "mangled": "_RNvXs3_NtNtCskGMzdWn1DGZ_4core4iter5rangeINtNtNtB9_3ops5range5RangexENtB5_17RangeIteratorImpl9spec_nextCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/range.rs",
+      "line": 899
+    },
+    "21": {
+      "name": "<core::ops::range::Range<i32> as core::iter::traits::iterator::Iterator>::next",
+      "mangled": "_RNvXs4_NtNtCskGMzdWn1DGZ_4core4iter5rangeINtNtNtB9_3ops5range5RangelENtNtNtB7_6traits8iterator8Iterator4nextCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/range.rs",
+      "line": 984
+    },
+    "22": {
+      "name": "<core::ops::range::Range<i64> as core::iter::traits::iterator::Iterator>::next",
+      "mangled": "_RNvXs4_NtNtCskGMzdWn1DGZ_4core4iter5rangeINtNtNtB9_3ops5range5RangexENtNtNtB7_6traits8iterator8Iterator4nextCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/range.rs",
+      "line": 984
+    },
+    "23": {
+      "name": "<f64>::abs",
+      "mangled": "_RNvMNtCskGMzdWn1DGZ_4core3f64d3absCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/num/f64.rs",
+      "line": 1611
+    },
+    "24": {
+      "name": "<f64>::sqrt",
+      "mangled": "_RNvMNtCs3HZVvw3jX5q_3std3f64d4sqrtCskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/std/src/num/f64.rs",
+      "line": 386
+    },
+    "25": {
+      "name": "core::hint::black_box::<i64>",
+      "mangled": "_RINvNtCskGMzdWn1DGZ_4core4hint9black_boxxECskU2CxCkayPT_16profiler_fixture",
+      "source": "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/hint.rs",
+      "line": 490
+    },
+    "30": {
+      "name": "__rustc::__rust_start_panic",
+      "mangled": "_RNvCs6rREvFdRhLb_7___rustc18___rust_start_panic",
+      "source": "library/panic_abort/src/lib.rs",
+      "line": 33
+    },
+    "31": {
+      "name": "<alloc::raw_vec::RawVecInner<_>>::reserve::do_reserve_and_handle::<alloc::alloc::Global>",
+      "mangled": "_RINvNvMs2_NtCseZhkpRmkzeB_5alloc7raw_vecINtB8_11RawVecInnerpE7reserve21do_reserve_and_handleNtNtBa_5alloc6GlobalECs3HZVvw3jX5q_3std",
+      "source": "library/alloc/src/raw_vec/mod.rs",
+      "line": 662
+    },
+    "32": {
+      "name": "core::ptr::drop_glue::<core::option::Option<alloc::vec::Vec<u8>>>",
+      "mangled": "_RINvNtCskGMzdWn1DGZ_4core3ptr9drop_glueINtNtB4_6option6OptionINtNtCseZhkpRmkzeB_5alloc3vec3VechEEECs3HZVvw3jX5q_3std",
+      "source": "library/core/src/ptr/mod.rs",
+      "line": 823
+    },
+    "33": {
+      "name": "func[33]",
+      "source": "library/core/src/ptr/mod.rs",
+      "line": 823
+    },
+    "34": {
+      "name": "core::ptr::drop_glue::<std::panicking::panic_handler::FormatStringPayload>",
+      "mangled": "_RINvNtCskGMzdWn1DGZ_4core3ptr9drop_glueNtNvNtCs3HZVvw3jX5q_3std9panicking13panic_handler19FormatStringPayloadEBH_",
+      "source": "library/core/src/ptr/mod.rs",
+      "line": 823
+    },
+    "35": {
+      "name": "std::sys::backtrace::__rust_end_short_backtrace::<std::alloc::rust_oom::{closure#0}, !>",
+      "mangled": "_RINvNtNtCs3HZVvw3jX5q_3std3sys9backtrace26___rust_end_short_backtraceNCNvNtB6_5alloc8rust_oom0zEB6_",
+      "source": "library/std/src/sys/backtrace.rs",
+      "line": 178
+    },
+    "36": {
+      "name": "std::alloc::rust_oom::{closure#0}",
+      "mangled": "_RNCNvNtCs3HZVvw3jX5q_3std5alloc8rust_oom0B5_",
+      "source": "library/std/src/alloc.rs",
+      "line": 424
+    },
+    "37": {
+      "name": "std::sys::backtrace::__rust_end_short_backtrace::<std::panicking::panic_handler::{closure#0}, !>",
+      "mangled": "_RINvNtNtCs3HZVvw3jX5q_3std3sys9backtrace26___rust_end_short_backtraceNCNvNtB6_9panicking13panic_handler0zEB6_",
+      "source": "library/std/src/sys/backtrace.rs",
+      "line": 178
+    },
+    "38": {
+      "name": "std::panicking::panic_handler::{closure#0}",
+      "mangled": "_RNCNvNtCs3HZVvw3jX5q_3std9panicking13panic_handler0B5_",
+      "source": "library/std/src/panicking.rs",
+      "line": 679
+    },
+    "39": {
+      "name": "<alloc::raw_vec::RawVecInner>::finish_grow",
+      "mangled": "_RNvMs5_NtCseZhkpRmkzeB_5alloc7raw_vecNtB5_11RawVecInner11finish_growCs3HZVvw3jX5q_3std",
+      "source": "library/alloc/src/raw_vec/mod.rs",
+      "line": 544
+    },
+    "40": {
+      "name": "std::panicking::panic_with_hook",
+      "mangled": "_RNvNtCs3HZVvw3jX5q_3std9panicking15panic_with_hook",
+      "source": "library/std/src/panicking.rs",
+      "line": 777
+    },
+    "41": {
+      "name": "std::alloc::default_alloc_error_hook",
+      "mangled": "_RNvNtCs3HZVvw3jX5q_3std5alloc24default_alloc_error_hook",
+      "source": "library/std/src/alloc.rs",
+      "line": 355
+    },
+    "42": {
+      "name": "__rustc::rust_panic",
+      "mangled": "_RNvCs6rREvFdRhLb_7___rustc10rust_panic",
+      "source": "library/std/src/panicking.rs",
+      "line": 886
+    },
+    "43": {
+      "name": "__rustc::__rdl_alloc",
+      "mangled": "_RNvCs6rREvFdRhLb_7___rustc11___rdl_alloc",
+      "source": "library/std/src/alloc.rs",
+      "line": 450
+    },
+    "44": {
+      "name": "<dlmalloc::dlmalloc::Dlmalloc<dlmalloc::sys::System>>::memalign",
+      "mangled": "_RNvMs0_NtCshLrrydh1LUZ_8dlmalloc8dlmallocINtB5_8DlmallocNtNtB7_3sys6SystemE8memalignCs3HZVvw3jX5q_3std",
+      "source": "/rust/deps/dlmalloc-0.2.13/src/dlmalloc.rs",
+      "line": 600
+    },
+    "45": {
+      "name": "<dlmalloc::dlmalloc::Dlmalloc<dlmalloc::sys::System>>::malloc",
+      "mangled": "_RNvMs0_NtCshLrrydh1LUZ_8dlmalloc8dlmallocINtB5_8DlmallocNtNtB7_3sys6SystemE6mallocCs3HZVvw3jX5q_3std",
+      "source": "/rust/deps/dlmalloc-0.2.13/src/dlmalloc.rs",
+      "line": 267
+    },
+    "46": {
+      "name": "__rustc::__rust_abort",
+      "mangled": "_RNvCs6rREvFdRhLb_7___rustc12___rust_abort",
+      "source": "library/std/src/rt.rs",
+      "line": 32
+    },
+    "47": {
+      "name": "__rustc::__rdl_dealloc",
+      "mangled": "_RNvCs6rREvFdRhLb_7___rustc13___rdl_dealloc",
+      "source": "library/std/src/alloc.rs",
+      "line": 460
+    },
+    "48": {
+      "name": "<dlmalloc::dlmalloc::Dlmalloc<dlmalloc::sys::System>>::free",
+      "mangled": "_RNvMs0_NtCshLrrydh1LUZ_8dlmalloc8dlmallocINtB5_8DlmallocNtNtB7_3sys6SystemE4freeCs3HZVvw3jX5q_3std",
+      "source": "/rust/deps/dlmalloc-0.2.13/src/dlmalloc.rs",
+      "line": 1211
+    },
+    "49": {
+      "name": "__rustc::__rdl_realloc",
+      "mangled": "_RNvCs6rREvFdRhLb_7___rustc13___rdl_realloc",
+      "source": "library/std/src/alloc.rs",
+      "line": 467
+    },
+    "50": {
+      "name": "<dlmalloc::dlmalloc::Dlmalloc<dlmalloc::sys::System>>::unlink_chunk",
+      "mangled": "_RNvMs0_NtCshLrrydh1LUZ_8dlmalloc8dlmallocINtB5_8DlmallocNtNtB7_3sys6SystemE12unlink_chunkCs3HZVvw3jX5q_3std",
+      "source": "/rust/deps/dlmalloc-0.2.13/src/dlmalloc.rs",
+      "line": 1110
+    },
+    "51": {
+      "name": "<dlmalloc::dlmalloc::Dlmalloc<dlmalloc::sys::System>>::dispose_chunk",
+      "mangled": "_RNvMs0_NtCshLrrydh1LUZ_8dlmalloc8dlmallocINtB5_8DlmallocNtNtB7_3sys6SystemE13dispose_chunkCs3HZVvw3jX5q_3std",
+      "source": "/rust/deps/dlmalloc-0.2.13/src/dlmalloc.rs",
+      "line": 665
+    },
+    "52": {
+      "name": "__rustc::rust_begin_unwind",
+      "mangled": "_RNvCs6rREvFdRhLb_7___rustc17rust_begin_unwind",
+      "source": "library/std/src/panicking.rs",
+      "line": 612
+    },
+    "53": {
+      "name": "__rustc::__rust_alloc_error_handler",
+      "mangled": "_RNvCs6rREvFdRhLb_7___rustc26___rust_alloc_error_handler",
+      "source": "library/std/src/alloc.rs",
+      "line": 423
+    },
+    "54": {
+      "name": "std::alloc::rust_oom",
+      "mangled": "_RNvNtCs3HZVvw3jX5q_3std5alloc8rust_oom",
+      "source": "library/std/src/alloc.rs",
+      "line": 423
+    },
+    "55": {
+      "name": "<dlmalloc::dlmalloc::Dlmalloc<dlmalloc::sys::System>>::insert_large_chunk",
+      "mangled": "_RNvMs0_NtCshLrrydh1LUZ_8dlmalloc8dlmallocINtB5_8DlmallocNtNtB7_3sys6SystemE18insert_large_chunkCs3HZVvw3jX5q_3std",
+      "source": "/rust/deps/dlmalloc-0.2.13/src/dlmalloc.rs",
+      "line": 1043
+    },
+    "56": {
+      "name": "func[56]",
+      "source": "library/core/src/sync/atomic.rs",
+      "line": 3923
+    },
+    "57": {
+      "name": "<alloc::string::String as core::any::Any>::type_id",
+      "mangled": "_RNvXNtCskGMzdWn1DGZ_4core3anyNtNtCseZhkpRmkzeB_5alloc6string6StringNtB2_3Any7type_idCs3HZVvw3jX5q_3std",
+      "source": "library/core/src/any.rs",
+      "line": 142
+    },
+    "58": {
+      "name": "<&str as core::any::Any>::type_id",
+      "mangled": "_RNvXNtCskGMzdWn1DGZ_4core3anyReNtB2_3Any7type_idCs3HZVvw3jX5q_3std",
+      "source": "library/core/src/any.rs",
+      "line": 142
+    },
+    "59": {
+      "name": "<std::panicking::panic_handler::FormatStringPayload as core::fmt::Display>::fmt",
+      "mangled": "_RNvXs0_NvNtCs3HZVvw3jX5q_3std9panicking13panic_handlerNtB5_19FormatStringPayloadNtNtCskGMzdWn1DGZ_4core3fmt7Display3fmt",
+      "source": "library/std/src/panicking.rs",
+      "line": 646
+    },
+    "60": {
+      "name": "<std::panicking::panic_handler::StaticStrPayload as core::panic::PanicPayload>::get",
+      "mangled": "_RNvXs1_NvNtCs3HZVvw3jX5q_3std9panicking13panic_handlerNtB5_16StaticStrPayloadNtNtCskGMzdWn1DGZ_4core5panic12PanicPayload3get",
+      "source": "library/std/src/panicking.rs",
+      "line": 662
+    },
+    "61": {
+      "name": "<std::panicking::panic_handler::StaticStrPayload as core::panic::PanicPayload>::as_str",
+      "mangled": "_RNvXs1_NvNtCs3HZVvw3jX5q_3std9panicking13panic_handlerNtB5_16StaticStrPayloadNtNtCskGMzdWn1DGZ_4core5panic12PanicPayload6as_str",
+      "source": "library/std/src/panicking.rs",
+      "line": 666
+    },
+    "62": {
+      "name": "<std::panicking::panic_handler::StaticStrPayload as core::panic::PanicPayload>::take_box",
+      "mangled": "_RNvXs1_NvNtCs3HZVvw3jX5q_3std9panicking13panic_handlerNtB5_16StaticStrPayloadNtNtCskGMzdWn1DGZ_4core5panic12PanicPayload8take_box",
+      "source": "library/std/src/panicking.rs",
+      "line": 658
+    },
+    "63": {
+      "name": "<std::panicking::panic_handler::StaticStrPayload as core::fmt::Display>::fmt",
+      "mangled": "_RNvXs2_NvNtCs3HZVvw3jX5q_3std9panicking13panic_handlerNtB5_16StaticStrPayloadNtNtCskGMzdWn1DGZ_4core3fmt7Display3fmt",
+      "source": "library/std/src/panicking.rs",
+      "line": 672
+    },
+    "64": {
+      "name": "<alloc::string::String as core::fmt::Write>::write_char",
+      "mangled": "_RNvXsZ_NtCseZhkpRmkzeB_5alloc6stringNtB5_6StringNtNtCskGMzdWn1DGZ_4core3fmt5Write10write_char",
+      "source": "library/alloc/src/string.rs",
+      "line": 3377
+    },
+    "65": {
+      "name": "<alloc::string::String as core::fmt::Write>::write_str",
+      "mangled": "_RNvXsZ_NtCseZhkpRmkzeB_5alloc6stringNtB5_6StringNtNtCskGMzdWn1DGZ_4core3fmt5Write9write_str",
+      "source": "library/alloc/src/string.rs",
+      "line": 3371
+    },
+    "66": {
+      "name": "<std::panicking::panic_handler::FormatStringPayload as core::panic::PanicPayload>::get",
+      "mangled": "_RNvXs_NvNtCs3HZVvw3jX5q_3std9panicking13panic_handlerNtB4_19FormatStringPayloadNtNtCskGMzdWn1DGZ_4core5panic12PanicPayload3get",
+      "source": "library/std/src/panicking.rs",
+      "line": 640
+    },
+    "67": {
+      "name": "<std::panicking::panic_handler::FormatStringPayload as core::panic::PanicPayload>::take_box",
+      "mangled": "_RNvXs_NvNtCs3HZVvw3jX5q_3std9panicking13panic_handlerNtB4_19FormatStringPayloadNtNtCskGMzdWn1DGZ_4core5panic12PanicPayload8take_box",
+      "source": "library/std/src/panicking.rs",
+      "line": 632
+    },
+    "68": {
+      "name": "<std::panicking::begin_panic::Payload<&str> as core::panic::PanicPayload>::as_str",
+      "mangled": "_RNvYINtNvNtCs3HZVvw3jX5q_3std9panicking11begin_panic7PayloadReENtNtCskGMzdWn1DGZ_4core5panic12PanicPayload6as_strB9_",
+      "source": "library/core/src/panic.rs",
+      "line": 143
+    },
+    "69": {
+      "name": "<alloc::string::String as core::fmt::Write>::write_fmt",
+      "mangled": "_RNvYNtNtCseZhkpRmkzeB_5alloc6string6StringNtNtCskGMzdWn1DGZ_4core3fmt5Write9write_fmtCs3HZVvw3jX5q_3std",
+      "source": "library/core/src/fmt/mod.rs",
+      "line": 214
+    },
+    "70": {
+      "name": "<dlmalloc::sys::System as dlmalloc::Allocator>::alloc",
+      "mangled": "_RNvXs_NtCshLrrydh1LUZ_8dlmalloc3sysNtB4_6SystemNtB6_9Allocator5alloc",
+      "source": "src/wasm.rs",
+      "line": 88
+    },
+    "71": {
+      "name": "alloc::raw_vec::handle_error",
+      "mangled": "_RNvNtCseZhkpRmkzeB_5alloc7raw_vec12handle_error",
+      "source": "library/alloc/src/raw_vec/mod.rs",
+      "line": 891
+    },
+    "72": {
+      "name": "alloc::alloc::handle_alloc_error",
+      "mangled": "_RNvNtCseZhkpRmkzeB_5alloc5alloc18handle_alloc_error",
+      "source": "library/alloc/src/alloc.rs",
+      "line": 543
+    },
+    "73": {
+      "name": "alloc::raw_vec::capacity_overflow",
+      "mangled": "_RNvNtCseZhkpRmkzeB_5alloc7raw_vec17capacity_overflow",
+      "source": "library/alloc/src/raw_vec/mod.rs",
+      "line": 27
+    },
+    "74": {
+      "name": "core::panicking::panic",
+      "mangled": "_RNvNtCskGMzdWn1DGZ_4core9panicking5panic",
+      "source": "library/core/src/panicking.rs",
+      "line": 138
+    },
+    "75": {
+      "name": "<&str as core::fmt::Display>::fmt",
+      "mangled": "_RNvXs1i_NtCskGMzdWn1DGZ_4core3fmtReNtB6_7Display3fmtB8_",
+      "source": "library/core/src/fmt/mod.rs",
+      "line": 2872
+    },
+    "76": {
+      "name": "core::fmt::write",
+      "mangled": "_RNvNtCskGMzdWn1DGZ_4core3fmt5write",
+      "source": "library/core/src/fmt/mod.rs",
+      "line": 1631
+    },
+    "77": {
+      "name": "core::panicking::panic_fmt",
+      "mangled": "_RNvNtCskGMzdWn1DGZ_4core9panicking9panic_fmt",
+      "source": "library/core/src/panicking.rs",
+      "line": 60
+    },
+    "78": {
+      "name": "core::str::count::do_count_chars",
+      "mangled": "_RNvNtNtCskGMzdWn1DGZ_4core3str5count14do_count_chars",
+      "source": "library/core/src/str/count.rs",
+      "line": 39
+    },
+    "79": {
+      "name": "<core::fmt::Formatter>::pad",
+      "mangled": "_RNvMsa_NtCskGMzdWn1DGZ_4core3fmtNtB5_9Formatter3pad",
+      "source": "library/core/src/fmt/mod.rs",
+      "line": 1910
+    },
+    "80": {
+      "name": "func[80]",
+      "source": "library/core/src/fmt/mod.rs",
+      "line": 2100
+    },
+    "81": {
+      "name": "core::option::expect_failed",
+      "mangled": "_RNvNtCskGMzdWn1DGZ_4core6option13expect_failed",
+      "source": "library/core/src/option.rs",
+      "line": 2259
+    },
+    "82": {
+      "name": "core::panicking::panic_nounwind_fmt",
+      "mangled": "_RNvNtCskGMzdWn1DGZ_4core9panicking18panic_nounwind_fmt",
+      "source": "library/core/src/panicking.rs",
+      "line": 95
+    },
+    "83": {
+      "name": "core::panicking::panic_const::panic_const_add_overflow",
+      "mangled": "_RNvNtNtCskGMzdWn1DGZ_4core9panicking11panic_const24panic_const_add_overflow",
+      "source": "library/core/src/panicking.rs",
+      "line": 173
+    },
+    "84": {
+      "name": "core::panicking::panic_const::panic_const_mul_overflow",
+      "mangled": "_RNvNtNtCskGMzdWn1DGZ_4core9panicking11panic_const24panic_const_mul_overflow",
+      "source": "library/core/src/panicking.rs",
+      "line": 173
+    },
+    "85": {
+      "name": "core::panicking::panic_const::panic_const_rem_overflow",
+      "mangled": "_RNvNtNtCskGMzdWn1DGZ_4core9panicking11panic_const24panic_const_rem_overflow",
+      "source": "library/core/src/panicking.rs",
+      "line": 173
+    },
+    "86": {
+      "name": "core::panicking::panic_const::panic_const_sub_overflow",
+      "mangled": "_RNvNtNtCskGMzdWn1DGZ_4core9panicking11panic_const24panic_const_sub_overflow",
+      "source": "library/core/src/panicking.rs",
+      "line": 173
+    },
+    "87": {
+      "name": "__multi3",
+      "source": "library/compiler-builtins/compiler-builtins/src/macros.rs",
+      "line": 478
+    }
+  },
+  "sources": [
+    "/rust/deps/dlmalloc-0.2.13/src/dlmalloc.rs",
+    "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/hint.rs",
+    "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/range.rs",
+    "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/iter/traits/collect.rs",
+    "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/num/f64.rs",
+    "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/ub_checks.rs",
+    "/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/std/src/num/f64.rs",
+    "library/alloc/src/alloc.rs",
+    "library/alloc/src/raw_vec/mod.rs",
+    "library/alloc/src/string.rs",
+    "library/compiler-builtins/compiler-builtins/src/macros.rs",
+    "library/core/src/any.rs",
+    "library/core/src/fmt/mod.rs",
+    "library/core/src/option.rs",
+    "library/core/src/panic.rs",
+    "library/core/src/panicking.rs",
+    "library/core/src/ptr/mod.rs",
+    "library/core/src/str/count.rs",
+    "library/core/src/sync/atomic.rs",
+    "library/panic_abort/src/lib.rs",
+    "library/std/src/alloc.rs",
+    "library/std/src/panicking.rs",
+    "library/std/src/rt.rs",
+    "library/std/src/sys/backtrace.rs",
+    "src/lib.rs",
+    "src/wasm.rs"
+  ]
+}

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WASM Profiler — Test Site</title>
+    <style>
+      body { font: 15px/1.5 system-ui, sans-serif; max-width: 46rem; margin: 3rem auto; padding: 0 1rem; }
+      button { font: inherit; padding: 0.4rem 0.9rem; margin: 0 0.4rem 0.4rem 0; cursor: pointer; }
+      button:disabled { opacity: 0.45; cursor: not-allowed; }
+      h2 { margin: 2rem 0 0.25rem; font-size: 1.05rem; }
+      h2 .tag { font-size: 0.75rem; font-weight: normal; color: #666; margin-left: 0.5rem; }
+      .lang { color: #666; font-size: 0.85rem; margin: 0 0 0.5rem; }
+      .downloads { background: #fafafa; border: 1px solid #e4e4e4; padding: 0.75rem 1rem; margin: 1.5rem 0; }
+      .downloads h2 { margin-top: 0; }
+      .downloads ul { list-style: none; margin: 0.5rem 0 0; padding: 0; }
+      .downloads table { border-collapse: collapse; margin-top: 0.6rem; font-size: 13px; }
+      .downloads th { text-align: left; font-weight: 600; color: #666; padding: 0.2rem 1.2rem 0.35rem 0; border-bottom: 1px solid #e4e4e4; }
+      .downloads td { padding: 0.25rem 1.2rem 0.25rem 0; vertical-align: top; }
+      .downloads td:first-child { color: #666; white-space: nowrap; }
+      .downloads a { font-family: monospace; }
+      .downloads .note { color: #666; font-size: 0.85rem; margin: 0; }
+      .downloads code { background: #eee; padding: 0 0.2rem; border-radius: 2px; }
+      .log { white-space: pre-wrap; background: #f4f4f4; border: 1px solid #ddd; padding: 0.75rem; height: 12rem; overflow-y: auto; font-family: monospace; font-size: 13px; margin: 0.75rem 0 0; }
+    </style>
+  </head>
+  <body>
+    <h1>WASM test workloads</h1>
+    <p>
+      Looped workloads run repeatedly for ~2 seconds; the benchmark runs once.
+      Start the profiler from the extension popup first, run a workload, then
+      stop the profiler.
+    </p>
+    <p>
+      Every module is compiled from real source inside the test-site container:
+      Rust for the recursion / loop / chain shapes, C++ for the multi-value
+      return. The release and debug builds are separate modules with different
+      function index spaces &mdash; profile one and symbolize it with the other.
+    </p>
+
+    <div class="downloads">
+      <h2>Modules</h2>
+      <p class="note">
+        Upload a <b>symbol map</b> to get source lines. Uploading the
+        <code>.wasm</code> you just profiled adds nothing — the browser already
+        read its name section during capture, and it never parses DWARF.
+      </p>
+      <table>
+        <thead>
+          <tr><th>build</th><th>module</th><th>symbol map</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rust release</td>
+            <td><a href="profiler_fixture.wasm" download>profiler_fixture.wasm</a></td>
+            <td><a href="profiler_fixture.symbols.json" download>profiler_fixture.symbols.json</a></td>
+          </tr>
+          <tr>
+            <td>Rust debug</td>
+            <td><a href="profiler_fixture.debug.wasm" download>profiler_fixture.debug.wasm</a></td>
+            <td><a href="profiler_fixture.debug.symbols.json" download>profiler_fixture.debug.symbols.json</a></td>
+          </tr>
+          <tr>
+            <td>C++ release</td>
+            <td><a href="multivalue.wasm" download>multivalue.wasm</a></td>
+            <td><a href="multivalue.symbols.json" download>multivalue.symbols.json</a></td>
+          </tr>
+          <tr>
+            <td>C++ debug</td>
+            <td><a href="multivalue.debug.wasm" download>multivalue.debug.wasm</a></td>
+            <td><a href="multivalue.debug.symbols.json" download>multivalue.debug.symbols.json</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Release <span class="tag">optimized, no debug info</span></h2>
+    <p class="lang">profiler_fixture.wasm (Rust) &middot; multivalue.wasm (C++)</p>
+    <div id="release-buttons">
+      <button data-build="release" data-fn="fib">fib (recursion)</button>
+      <button data-build="release" data-fn="hot_loop">hot loop (leaf kernel)</button>
+      <button data-build="release" data-fn="chain_a">call chain (a→b→c)</button>
+      <button data-build="release" data-fn="mixed">mixed (all three)</button>
+      <button data-build="release" data-fn="multi">multi-value returns</button>
+      <button data-build="release" data-fn="benchmark">benchmark (3× work(10))</button>
+    </div>
+    <div class="log" id="release-log">release — loading modules…</div>
+
+    <h2>Debug <span class="tag">unoptimized, DWARF</span></h2>
+    <p class="lang">profiler_fixture.debug.wasm (Rust) &middot; multivalue.debug.wasm (C++)</p>
+    <div id="debug-buttons">
+      <button data-build="debug" data-fn="fib">fib (recursion)</button>
+      <button data-build="debug" data-fn="hot_loop">hot loop (leaf kernel)</button>
+      <button data-build="debug" data-fn="chain_a">call chain (a→b→c)</button>
+      <button data-build="debug" data-fn="mixed">mixed (all three)</button>
+      <button data-build="debug" data-fn="multi">multi-value returns</button>
+      <button data-build="debug" data-fn="benchmark">benchmark (3× work(10))</button>
+    </div>
+    <div class="log" id="debug-log">debug — loading modules…</div>
+
+    <script>
+      const logs = {
+        release: document.getElementById('release-log'),
+        debug: document.getElementById('debug-log')
+      };
+
+      const print = (build, line) => {
+        const el = logs[build];
+        el.textContent += '\n' + line;
+        el.scrollTop = el.scrollHeight;
+      };
+
+      const MODULES = {
+        release: { rust: 'profiler_fixture.wasm', cpp: 'multivalue.wasm' },
+        debug: { rust: 'profiler_fixture.debug.wasm', cpp: 'multivalue.debug.wasm' }
+      };
+
+      const load = (url) =>
+        fetch(url)
+          .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(`${url}: HTTP ${r.status}`))))
+          .then((buf) => WebAssembly.instantiate(buf))
+          .then(({ instance }) => instance.exports);
+
+      const builds = {};
+
+      for (const [build, urls] of Object.entries(MODULES)) {
+        builds[build] = Promise.all([load(urls.rust), load(urls.cpp)])
+          .then(([rust, cpp]) => {
+            print(build, `${build}: modules loaded. Ready.`);
+            return { rust, cpp };
+          })
+          .catch((err) => {
+            print(build, `${build}: failed to load — ${err.message}`);
+            document
+              .querySelectorAll(`button[data-build="${build}"]`)
+              .forEach((b) => { b.disabled = true; });
+            throw err;
+          });
+      }
+
+      Promise.allSettled(Object.values(builds)).then((results) => {
+        const ok = results.filter((r) => r.status === 'fulfilled').length;
+        const summary = `${ok}/${results.length} builds loaded.`;
+        for (const build of Object.keys(logs)) print(build, summary);
+      });
+
+      const MULTI_N = 30_000;
+
+      const WORKLOADS = {
+        fib: { label: 'fib(30)', run: ({ rust }) => rust.fib(30) },
+        hot_loop: { label: 'hot_loop(2e6)', run: ({ rust }) => rust.hot_loop(2_000_000) },
+        chain_a: { label: 'chain_a(200000)', run: ({ rust }) => rust.chain_a(200_000) },
+        mixed: {
+          label: 'mixed',
+          run: ({ rust }) => { rust.fib(24); rust.hot_loop(300_000); return rust.chain_a(50_000); }
+        },
+        multi: { label: `multi_loop(${MULTI_N})`, run: ({ cpp }) => cpp.multi_loop(MULTI_N) },
+        benchmark: { label: 'benchmark (3× work(10))', once: true, run: ({ rust }) => rust.benchmark() }
+      };
+
+      async function runWorkload(build, name) {
+        const exports = await builds[build];
+        const { label, run, once } = WORKLOADS[name];
+        print(build, `[${build}] ${label}: running…`);
+        await new Promise(requestAnimationFrame);
+
+        if (once) {
+          const t0 = performance.now();
+          const result = run(exports);
+          const ms = (performance.now() - t0).toFixed(0);
+          print(build, `[${build}] ${label} = ${result} in ${ms} ms`);
+          return;
+        }
+
+        const t0 = performance.now();
+        let iterations = 0;
+        let last;
+        while (performance.now() - t0 < 2000) {
+          last = run(exports);
+          iterations++;
+        }
+        const ms = (performance.now() - t0).toFixed(0);
+        print(build, `[${build}] ${label}: ${iterations} iterations in ${ms} ms (last result: ${last})`);
+      }
+
+      for (const button of document.querySelectorAll('button[data-build]')) {
+        const suffix = WORKLOADS[button.dataset.fn].once ? ' · runs once' : ' · 2 s cap';
+        button.textContent += suffix;
+        button.onclick = () => runWorkload(button.dataset.build, button.dataset.fn);
+      }
+    </script>
+  </body>
+</html>

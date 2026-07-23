@@ -1,0 +1,33 @@
+{
+  "filename": "multivalue.debug.wasm",
+  "hash": "d923222f38ee21863f55f0d5bdff272258ff8c0898e8b125975a6a5c09241661",
+  "functionCount": 5,
+  "symbolQuality": "debug",
+  "symbols": {
+    "1": {
+      "name": "fixture::twice(int)",
+      "mangled": "_ZN7fixture5twiceEi",
+      "source": "multivalue.cpp",
+      "line": 8
+    },
+    "2": {
+      "name": "fixture::pack(int)",
+      "mangled": "_ZN7fixture4packEi",
+      "source": "multivalue.cpp",
+      "line": 12
+    },
+    "3": {
+      "name": "pack_a",
+      "source": "multivalue.cpp",
+      "line": 18
+    },
+    "4": {
+      "name": "multi_loop",
+      "source": "multivalue.cpp",
+      "line": 22
+    }
+  },
+  "sources": [
+    "multivalue.cpp"
+  ]
+}

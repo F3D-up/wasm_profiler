@@ -1,0 +1,31 @@
+{
+  "name": "wasm-profiler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && node scripts/build-scripts.mjs && node scripts/build-tool.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "vitest run",
+    "check": "tsc --noEmit && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "binaryen": "131.0.0",
+    "d3-flame-graph": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/chrome": "^0.2.2",
+    "@types/jsdom": "^28.0.3",
+    "@types/node": "^26.1.1",
+    "esbuild": "^0.28.1",
+    "jsdom": "^30.0.1",
+    "svelte": "^5.56.6",
+    "svelte-check": "^4.7.3",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10"
+  }
+}

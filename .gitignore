@@ -1,0 +1,8 @@
+node_modules/
+dist/
+test-site/*.wasm
+!test-site/unrelated.wasm
+fixtures/out/
+fixtures/rust/target/
+fixtures/native/target/
+*.log

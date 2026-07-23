@@ -1,0 +1,11 @@
+[package]
+name = "native_bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+profiler_fixture = { path = "../rust" }
+
+[profile.release]
+opt-level = 3
+debug = true

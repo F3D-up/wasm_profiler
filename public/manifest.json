@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "WASM Profiler",
+  "version": "0.1.0",
+  "description": "In-browser WebAssembly profiler with flame graph output",
+  "permissions": ["tabs", "scripting", "storage", "unlimitedStorage", "activeTab", "debugger"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["bridge.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "WASM Profiler",
+    "default_popup": "controller/index.html"
+  }
+}

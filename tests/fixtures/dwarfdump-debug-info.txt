@@ -1,0 +1,893 @@
+0x0000072f: Compile Unit: length = 0x0000068a, format = DWARF32, version = 0x0004, abbr_offset = 0x023e, addr_size = 0x04 (next unit at 0x00000dbd)
+
+0x0000073a: DW_TAG_compile_unit
+              DW_AT_producer	("clang LLVM (rustc version 1.98.0 (88d9e12ae 2026-08-18))")
+              DW_AT_language	(DW_LANG_Rust)
+              DW_AT_name	("src/lib.rs/@/aoq7mimdep8jv0vltv0rfw30c")
+              DW_AT_stmt_list	(0x00000310)
+              DW_AT_comp_dir	("/src")
+              DW_AT_low_pc	(0x00000000)
+              DW_AT_ranges	(0x000000f8
+                 [0x000001e1, 0x00000220)
+                 [0x00000222, 0x00000310)
+                 [0x00000311, 0x00000361)
+                 [0x00000578, 0x000005c8)
+                 [0x000005c9, 0x00000619)
+                 [0x0000061a, 0x00000673)
+                 [0x00000675, 0x000007cf)
+                 [0x000007d0, 0x0000081b)
+                 [0x0000081c, 0x0000087e)
+                 [0x00000880, 0x00000932)
+                 [0x00000933, 0x0000098c)
+                 [0x0000098e, 0x00000a73)
+                 [0x00000a75, 0x00000b26)
+                 [0x00000363, 0x00000577))
+
+0x00000755:   DW_TAG_namespace
+                DW_AT_name	("profiler_fixture")
+
+0x0000075a:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x000001e1)
+                  DW_AT_high_pc	(0x00000220)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture10rare_brief")
+                  DW_AT_name	("rare_brief")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(64)
+                  DW_AT_type	(0x00000da7 "i64")
+
+0x00000776:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +8)
+                    DW_AT_name	("x")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(64)
+                    DW_AT_type	(0x00000da7 "i64")
+
+0x00000784:       NULL
+
+0x00000785:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x00000222)
+                  DW_AT_high_pc	(0x00000310)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture5heavy")
+                  DW_AT_name	("heavy")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(50)
+                  DW_AT_type	(0x00000da7 "i64")
+
+0x000007a1:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +48)
+                    DW_AT_name	("iters")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(50)
+                    DW_AT_type	(0x00000da7 "i64")
+
+0x000007af:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x00000249)
+                    DW_AT_high_pc	(0x00000300)
+
+0x000007b8:         DW_TAG_variable
+                      DW_AT_location	(DW_OP_fbreg +8)
+                      DW_AT_name	("acc")
+                      DW_AT_alignment	(8)
+                      DW_AT_decl_file	("/src/src/lib.rs")
+                      DW_AT_decl_line	(51)
+                      DW_AT_type	(0x00000da7 "i64")
+
+0x000007c7:         DW_TAG_lexical_block
+                      DW_AT_low_pc	(0x00000274)
+                      DW_AT_high_pc	(0x000002f9)
+
+0x000007d0:           DW_TAG_variable
+                        DW_AT_location	(DW_OP_fbreg +16)
+                        DW_AT_name	("iter")
+                        DW_AT_alignment	(8)
+                        DW_AT_decl_file	("/src/src/lib.rs")
+                        DW_AT_decl_line	(52)
+                        DW_AT_type	(0x00000d50 "core::ops::range::Range<i64>")
+
+0x000007df:           DW_TAG_lexical_block
+                        DW_AT_low_pc	(0x000002a2)
+                        DW_AT_high_pc	(0x000002f5)
+
+0x000007e8:             DW_TAG_variable
+                          DW_AT_location	(DW_OP_fbreg +72)
+                          DW_AT_name	("i")
+                          DW_AT_alignment	(8)
+                          DW_AT_decl_file	("/src/src/lib.rs")
+                          DW_AT_decl_line	(52)
+                          DW_AT_type	(0x00000da7 "i64")
+
+0x000007f8:             DW_TAG_inlined_subroutine
+                          DW_AT_abstract_origin	(0x00000cf0 "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_mul")
+                          DW_AT_low_pc	(0x000002c1)
+                          DW_AT_high_pc	(0x000002d6)
+                          DW_AT_call_file	("/src/src/lib.rs")
+                          DW_AT_call_line	(53)
+                          DW_AT_call_column	(0x2d)
+
+0x00000808:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +112)
+                            DW_AT_abstract_origin	(0x00000d01 "self")
+
+0x00000811:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +120)
+                            DW_AT_abstract_origin	(0x00000d0d "rhs")
+
+0x0000081a:               NULL
+
+0x0000081b:             DW_TAG_inlined_subroutine
+                          DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                          DW_AT_low_pc	(0x000002d6)
+                          DW_AT_high_pc	(0x000002eb)
+                          DW_AT_call_file	("/src/src/lib.rs")
+                          DW_AT_call_line	(53)
+                          DW_AT_call_column	(0x3e)
+
+0x0000082b:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +96)
+                            DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000834:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +104)
+                            DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x0000083d:               NULL
+
+0x0000083e:             DW_TAG_inlined_subroutine
+                          DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                          DW_AT_low_pc	(0x000002eb)
+                          DW_AT_high_pc	(0x000002f2)
+                          DW_AT_call_file	("/src/src/lib.rs")
+                          DW_AT_call_line	(53)
+                          DW_AT_call_column	(0x13)
+
+0x0000084e:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +80)
+                            DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000857:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +88)
+                            DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000860:               NULL
+
+0x00000861:             NULL
+
+0x00000862:           NULL
+
+0x00000863:         NULL
+
+0x00000864:       NULL
+
+0x00000865:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x00000311)
+                  DW_AT_high_pc	(0x00000361)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x0, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture6pass_a")
+                  DW_AT_name	("pass_a")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(87)
+                  DW_AT_type	(0x00000da7 "i64")
+
+0x00000881:       DW_TAG_inlined_subroutine
+                    DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                    DW_AT_low_pc	(0x0000034b)
+                    DW_AT_high_pc	(0x00000352)
+                    DW_AT_call_file	("/src/src/lib.rs")
+                    DW_AT_call_line	(88)
+                    DW_AT_call_column	(0x0e)
+
+0x00000891:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +0)
+                      DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000899:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +8)
+                      DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x000008a1:         NULL
+
+0x000008a2:       NULL
+
+0x000008a3:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x00000578)
+                  DW_AT_high_pc	(0x000005c8)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x0, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture6pass_b")
+                  DW_AT_name	("pass_b")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(92)
+                  DW_AT_type	(0x00000da7 "i64")
+
+0x000008bf:       DW_TAG_inlined_subroutine
+                    DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                    DW_AT_low_pc	(0x000005b2)
+                    DW_AT_high_pc	(0x000005b9)
+                    DW_AT_call_file	("/src/src/lib.rs")
+                    DW_AT_call_line	(93)
+                    DW_AT_call_column	(0x0e)
+
+0x000008cf:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +0)
+                      DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x000008d7:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +8)
+                      DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x000008df:         NULL
+
+0x000008e0:       NULL
+
+0x000008e1:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x000005c9)
+                  DW_AT_high_pc	(0x00000619)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x0, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture6pass_c")
+                  DW_AT_name	("pass_c")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(97)
+                  DW_AT_type	(0x00000da7 "i64")
+
+0x000008fd:       DW_TAG_inlined_subroutine
+                    DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                    DW_AT_low_pc	(0x00000603)
+                    DW_AT_high_pc	(0x0000060a)
+                    DW_AT_call_file	("/src/src/lib.rs")
+                    DW_AT_call_line	(98)
+                    DW_AT_call_column	(0x0e)
+
+0x0000090d:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +0)
+                      DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000915:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +8)
+                      DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x0000091d:         NULL
+
+0x0000091e:       NULL
+
+0x0000091f:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x0000061a)
+                  DW_AT_high_pc	(0x00000673)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture7chain_b")
+                  DW_AT_name	("chain_b")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(34)
+                  DW_AT_type	(0x00000da7 "i64")
+
+0x0000093b:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +12)
+                    DW_AT_name	("n")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(34)
+                    DW_AT_type	(0x00000db5 "i32")
+
+0x00000949:       NULL
+
+0x0000094a:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x00000675)
+                  DW_AT_high_pc	(0x000007cf)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture7chain_c")
+                  DW_AT_name	("chain_c")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(25)
+                  DW_AT_type	(0x00000da7 "i64")
+
+0x00000966:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +68)
+                    DW_AT_name	("n")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(25)
+                    DW_AT_type	(0x00000db5 "i32")
+
+0x00000975:       DW_TAG_lexical_block
+                    DW_AT_ranges	(0x000000a8
+                       [0x000006a0, 0x0000074e)
+                       [0x00000762, 0x000007cf))
+
+0x0000097a:         DW_TAG_variable
+                      DW_AT_location	(DW_OP_fbreg +24)
+                      DW_AT_name	("acc")
+                      DW_AT_alignment	(8)
+                      DW_AT_decl_file	("/src/src/lib.rs")
+                      DW_AT_decl_line	(26)
+                      DW_AT_type	(0x00000da7 "i64")
+
+0x00000989:         DW_TAG_lexical_block
+                      DW_AT_ranges	(0x000000c0
+                         [0x000006d1, 0x00000746)
+                         [0x00000762, 0x000007cf))
+
+0x0000098e:           DW_TAG_variable
+                        DW_AT_location	(DW_OP_fbreg +32)
+                        DW_AT_name	("iter")
+                        DW_AT_alignment	(8)
+                        DW_AT_decl_file	("/src/src/lib.rs")
+                        DW_AT_decl_line	(27)
+                        DW_AT_type	(0x00000d50 "core::ops::range::Range<i64>")
+
+0x0000099d:           DW_TAG_lexical_block
+                        DW_AT_ranges	(0x000000d8
+                           [0x0000070b, 0x00000746)
+                           [0x00000762, 0x000007bd)
+                           [0x000007bf, 0x000007cf))
+
+0x000009a2:             DW_TAG_variable
+                          DW_AT_location	(DW_OP_fbreg +88)
+                          DW_AT_name	("i")
+                          DW_AT_alignment	(8)
+                          DW_AT_decl_file	("/src/src/lib.rs")
+                          DW_AT_decl_line	(27)
+                          DW_AT_type	(0x00000da7 "i64")
+
+0x000009b2:             NULL
+
+0x000009b3:           NULL
+
+0x000009b4:         NULL
+
+0x000009b5:       NULL
+
+0x000009b6:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x000007d0)
+                  DW_AT_high_pc	(0x0000081b)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture8hot_step")
+                  DW_AT_name	("hot_step")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(11)
+                  DW_AT_type	(0x00000dae "f64")
+
+0x000009d2:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +8)
+                    DW_AT_name	("x")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(11)
+                    DW_AT_type	(0x00000dae "f64")
+
+0x000009e0:       NULL
+
+0x000009e1:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x0000081c)
+                  DW_AT_high_pc	(0x0000087e)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_linkage_name	("_RNvCskU2CxCkayPT_16profiler_fixture8tiny_hot")
+                  DW_AT_name	("tiny_hot")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(59)
+                  DW_AT_type	(0x00000da7 "i64")
+
+0x000009fd:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +8)
+                    DW_AT_name	("x")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(59)
+                    DW_AT_type	(0x00000da7 "i64")
+
+0x00000a0b:       DW_TAG_inlined_subroutine
+                    DW_AT_abstract_origin	(0x00000cf0 "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_mul")
+                    DW_AT_low_pc	(0x00000853)
+                    DW_AT_high_pc	(0x00000868)
+                    DW_AT_call_file	("/src/src/lib.rs")
+                    DW_AT_call_line	(60)
+                    DW_AT_call_column	(0x12)
+
+0x00000a1b:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +32)
+                      DW_AT_abstract_origin	(0x00000d01 "self")
+
+0x00000a23:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +40)
+                      DW_AT_abstract_origin	(0x00000d0d "rhs")
+
+0x00000a2b:         NULL
+
+0x00000a2c:       DW_TAG_inlined_subroutine
+                    DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                    DW_AT_low_pc	(0x00000868)
+                    DW_AT_high_pc	(0x0000086f)
+                    DW_AT_call_file	("/src/src/lib.rs")
+                    DW_AT_call_line	(60)
+                    DW_AT_call_column	(0x23)
+
+0x00000a3c:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +16)
+                      DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000a44:         DW_TAG_formal_parameter
+                      DW_AT_location	(DW_OP_fbreg +24)
+                      DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000a4c:         NULL
+
+0x00000a4d:       NULL
+
+0x00000a4e:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x00000880)
+                  DW_AT_high_pc	(0x00000932)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x0, DW_OP_stack_value)
+                  DW_AT_name	("benchmark")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(103)
+                  DW_AT_type	(0x00000da7 "i64")
+                  DW_AT_external	(true)
+
+0x00000a66:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x000008a0)
+                    DW_AT_high_pc	(0x00000922)
+
+0x00000a6f:         DW_TAG_variable
+                      DW_AT_location	(DW_OP_fbreg +8)
+                      DW_AT_name	("acc")
+                      DW_AT_alignment	(8)
+                      DW_AT_decl_file	("/src/src/lib.rs")
+                      DW_AT_decl_line	(104)
+                      DW_AT_type	(0x00000da7 "i64")
+
+0x00000a7e:         DW_TAG_inlined_subroutine
+                      DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                      DW_AT_low_pc	(0x000008bd)
+                      DW_AT_high_pc	(0x000008c4)
+                      DW_AT_call_file	("/src/src/lib.rs")
+                      DW_AT_call_line	(105)
+                      DW_AT_call_column	(0x0f)
+
+0x00000a8e:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +48)
+                        DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000a96:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +56)
+                        DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000a9e:           NULL
+
+0x00000a9f:         DW_TAG_inlined_subroutine
+                      DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                      DW_AT_low_pc	(0x000008e4)
+                      DW_AT_high_pc	(0x000008eb)
+                      DW_AT_call_file	("/src/src/lib.rs")
+                      DW_AT_call_line	(106)
+                      DW_AT_call_column	(0x0f)
+
+0x00000aaf:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +32)
+                        DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000ab7:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +40)
+                        DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000abf:           NULL
+
+0x00000ac0:         DW_TAG_inlined_subroutine
+                      DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                      DW_AT_low_pc	(0x0000090b)
+                      DW_AT_high_pc	(0x00000912)
+                      DW_AT_call_file	("/src/src/lib.rs")
+                      DW_AT_call_line	(107)
+                      DW_AT_call_column	(0x0f)
+
+0x00000ad0:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +16)
+                        DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000ad8:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +24)
+                        DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000ae0:           NULL
+
+0x00000ae1:         NULL
+
+0x00000ae2:       NULL
+
+0x00000ae3:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x00000933)
+                  DW_AT_high_pc	(0x0000098c)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_name	("chain_a")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(39)
+                  DW_AT_type	(0x00000da7 "i64")
+                  DW_AT_external	(true)
+
+0x00000afb:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +12)
+                    DW_AT_name	("n")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(39)
+                    DW_AT_type	(0x00000db5 "i32")
+
+0x00000b09:       NULL
+
+0x00000b0a:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x0000098e)
+                  DW_AT_high_pc	(0x00000a73)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_name	("fib")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(2)
+                  DW_AT_type	(0x00000db5 "i32")
+                  DW_AT_external	(true)
+
+0x00000b22:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +12)
+                    DW_AT_name	("n")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(2)
+                    DW_AT_type	(0x00000db5 "i32")
+
+0x00000b30:       NULL
+
+0x00000b31:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x00000a75)
+                  DW_AT_high_pc	(0x00000b26)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_name	("hot_loop")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(16)
+                  DW_AT_type	(0x00000dae "f64")
+                  DW_AT_external	(true)
+
+0x00000b49:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +44)
+                    DW_AT_name	("iters")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(16)
+                    DW_AT_type	(0x00000db5 "i32")
+
+0x00000b57:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x00000aa6)
+                    DW_AT_high_pc	(0x00000b17)
+
+0x00000b60:         DW_TAG_variable
+                      DW_AT_location	(DW_OP_fbreg +24)
+                      DW_AT_name	("acc")
+                      DW_AT_alignment	(8)
+                      DW_AT_decl_file	("/src/src/lib.rs")
+                      DW_AT_decl_line	(17)
+                      DW_AT_type	(0x00000dae "f64")
+
+0x00000b6f:         DW_TAG_lexical_block
+                      DW_AT_low_pc	(0x00000acd)
+                      DW_AT_high_pc	(0x00000b10)
+
+0x00000b78:           DW_TAG_variable
+                        DW_AT_location	(DW_OP_fbreg +36)
+                        DW_AT_name	("iter")
+                        DW_AT_alignment	(4)
+                        DW_AT_decl_file	("/src/src/lib.rs")
+                        DW_AT_decl_line	(18)
+                        DW_AT_type	(0x00000d7a "core::ops::range::Range<i32>")
+
+0x00000b87:           NULL
+
+0x00000b88:         NULL
+
+0x00000b89:       NULL
+
+0x00000b8a:     DW_TAG_subprogram
+                  DW_AT_low_pc	(0x00000363)
+                  DW_AT_high_pc	(0x00000577)
+                  DW_AT_frame_base	(DW_OP_WASM_location 0x0 0x1, DW_OP_stack_value)
+                  DW_AT_name	("work")
+                  DW_AT_decl_file	("/src/src/lib.rs")
+                  DW_AT_decl_line	(70)
+                  DW_AT_type	(0x00000da7 "i64")
+                  DW_AT_external	(true)
+
+0x00000ba2:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg +76)
+                    DW_AT_name	("depth")
+                    DW_AT_decl_file	("/src/src/lib.rs")
+                    DW_AT_decl_line	(70)
+                    DW_AT_type	(0x00000db5 "i32")
+
+0x00000bb1:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x0000038e)
+                    DW_AT_high_pc	(0x00000567)
+
+0x00000bba:         DW_TAG_variable
+                      DW_AT_location	(DW_OP_fbreg +0)
+                      DW_AT_name	("acc")
+                      DW_AT_alignment	(8)
+                      DW_AT_decl_file	("/src/src/lib.rs")
+                      DW_AT_decl_line	(71)
+                      DW_AT_type	(0x00000da7 "i64")
+
+0x00000bc9:         DW_TAG_lexical_block
+                      DW_AT_low_pc	(0x000003bc)
+                      DW_AT_high_pc	(0x00000419)
+
+0x00000bd2:           DW_TAG_variable
+                        DW_AT_location	(DW_OP_fbreg +8)
+                        DW_AT_name	("iter")
+                        DW_AT_alignment	(8)
+                        DW_AT_decl_file	("/src/src/lib.rs")
+                        DW_AT_decl_line	(72)
+                        DW_AT_type	(0x00000d50 "core::ops::range::Range<i64>")
+
+0x00000be1:           DW_TAG_lexical_block
+                        DW_AT_low_pc	(0x000003ea)
+                        DW_AT_high_pc	(0x00000415)
+
+0x00000bea:             DW_TAG_variable
+                          DW_AT_location	(DW_OP_fbreg +120)
+                          DW_AT_name	("i")
+                          DW_AT_alignment	(8)
+                          DW_AT_decl_file	("/src/src/lib.rs")
+                          DW_AT_decl_line	(72)
+                          DW_AT_type	(0x00000da7 "i64")
+
+0x00000bfa:             DW_TAG_inlined_subroutine
+                          DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                          DW_AT_low_pc	(0x0000040b)
+                          DW_AT_high_pc	(0x00000412)
+                          DW_AT_call_file	("/src/src/lib.rs")
+                          DW_AT_call_line	(73)
+                          DW_AT_call_column	(0x13)
+
+0x00000c0a:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +128)
+                            DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000c13:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +136)
+                            DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000c1c:               NULL
+
+0x00000c1d:             NULL
+
+0x00000c1e:           NULL
+
+0x00000c1f:         DW_TAG_inlined_subroutine
+                      DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                      DW_AT_low_pc	(0x0000043d)
+                      DW_AT_high_pc	(0x00000444)
+                      DW_AT_call_file	("/src/src/lib.rs")
+                      DW_AT_call_line	(75)
+                      DW_AT_call_column	(0x0f)
+
+0x00000c2f:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +192)
+                        DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000c38:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +200)
+                        DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000c41:           NULL
+
+0x00000c42:         DW_TAG_lexical_block
+                      DW_AT_low_pc	(0x00000475)
+                      DW_AT_high_pc	(0x000004d2)
+
+0x00000c4b:           DW_TAG_variable
+                        DW_AT_location	(DW_OP_fbreg +40)
+                        DW_AT_name	("iter")
+                        DW_AT_alignment	(8)
+                        DW_AT_decl_file	("/src/src/lib.rs")
+                        DW_AT_decl_line	(76)
+                        DW_AT_type	(0x00000d50 "core::ops::range::Range<i64>")
+
+0x00000c5a:           DW_TAG_lexical_block
+                        DW_AT_low_pc	(0x000004a3)
+                        DW_AT_high_pc	(0x000004ce)
+
+0x00000c63:             DW_TAG_variable
+                          DW_AT_location	(DW_OP_fbreg +112)
+                          DW_AT_name	("i")
+                          DW_AT_alignment	(8)
+                          DW_AT_decl_file	("/src/src/lib.rs")
+                          DW_AT_decl_line	(76)
+                          DW_AT_type	(0x00000da7 "i64")
+
+0x00000c73:             DW_TAG_inlined_subroutine
+                          DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                          DW_AT_low_pc	(0x000004c4)
+                          DW_AT_high_pc	(0x000004cb)
+                          DW_AT_call_file	("/src/src/lib.rs")
+                          DW_AT_call_line	(77)
+                          DW_AT_call_column	(0x13)
+
+0x00000c83:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +144)
+                            DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000c8c:               DW_TAG_formal_parameter
+                            DW_AT_location	(DW_OP_fbreg +152)
+                            DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000c95:               NULL
+
+0x00000c96:             NULL
+
+0x00000c97:           NULL
+
+0x00000c98:         DW_TAG_inlined_subroutine
+                      DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                      DW_AT_low_pc	(0x000004f4)
+                      DW_AT_high_pc	(0x000004fb)
+                      DW_AT_call_file	("/src/src/lib.rs")
+                      DW_AT_call_line	(79)
+                      DW_AT_call_column	(0x0f)
+
+0x00000ca8:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +176)
+                        DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000cb1:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +184)
+                        DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000cba:           NULL
+
+0x00000cbb:         DW_TAG_inlined_subroutine
+                      DW_AT_abstract_origin	(0x00000d1a "_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                      DW_AT_low_pc	(0x0000053f)
+                      DW_AT_high_pc	(0x00000546)
+                      DW_AT_call_file	("/src/src/lib.rs")
+                      DW_AT_call_line	(81)
+                      DW_AT_call_column	(0x13)
+
+0x00000ccb:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +160)
+                        DW_AT_abstract_origin	(0x00000d2b "self")
+
+0x00000cd4:           DW_TAG_formal_parameter
+                        DW_AT_location	(DW_OP_fbreg +168)
+                        DW_AT_abstract_origin	(0x00000d37 "rhs")
+
+0x00000cdd:           NULL
+
+0x00000cde:         NULL
+
+0x00000cdf:       NULL
+
+0x00000ce0:     NULL
+
+0x00000ce1:   DW_TAG_namespace
+                DW_AT_name	("core")
+
+0x00000ce6:     DW_TAG_namespace
+                  DW_AT_name	("num")
+
+0x00000ceb:       DW_TAG_namespace
+                    DW_AT_name	("{impl#3}")
+
+0x00000cf0:         DW_TAG_subprogram
+                      DW_AT_linkage_name	("_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_mul")
+                      DW_AT_name	("wrapping_mul")
+                      DW_AT_decl_file	("/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/num/int_macros.rs")
+                      DW_AT_decl_line	(2260)
+                      DW_AT_type	(0x00000da7 "i64")
+                      DW_AT_inline	(DW_INL_inlined)
+
+0x00000d01:           DW_TAG_formal_parameter
+                        DW_AT_name	("self")
+                        DW_AT_decl_file	("/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/num/int_macros.rs")
+                        DW_AT_decl_line	(2260)
+                        DW_AT_type	(0x00000da7 "i64")
+
+0x00000d0d:           DW_TAG_formal_parameter
+                        DW_AT_name	("rhs")
+                        DW_AT_decl_file	("/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/num/int_macros.rs")
+                        DW_AT_decl_line	(2260)
+                        DW_AT_type	(0x00000da7 "i64")
+
+0x00000d19:           NULL
+
+0x00000d1a:         DW_TAG_subprogram
+                      DW_AT_linkage_name	("_RNvMs1_NtCskGMzdWn1DGZ_4core3numx12wrapping_add")
+                      DW_AT_name	("wrapping_add")
+                      DW_AT_decl_file	("/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/num/int_macros.rs")
+                      DW_AT_decl_line	(2188)
+                      DW_AT_type	(0x00000da7 "i64")
+                      DW_AT_inline	(DW_INL_inlined)
+
+0x00000d2b:           DW_TAG_formal_parameter
+                        DW_AT_name	("self")
+                        DW_AT_decl_file	("/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/num/int_macros.rs")
+                        DW_AT_decl_line	(2188)
+                        DW_AT_type	(0x00000da7 "i64")
+
+0x00000d37:           DW_TAG_formal_parameter
+                        DW_AT_name	("rhs")
+                        DW_AT_decl_file	("/rustc/88d9e12ae178fab0fb5cc050a94da85685d449ea/library/core/src/num/int_macros.rs")
+                        DW_AT_decl_line	(2188)
+                        DW_AT_type	(0x00000da7 "i64")
+
+0x00000d43:           NULL
+
+0x00000d44:         NULL
+
+0x00000d45:       NULL
+
+0x00000d46:     DW_TAG_namespace
+                  DW_AT_name	("ops")
+
+0x00000d4b:       DW_TAG_namespace
+                    DW_AT_name	("range")
+
+0x00000d50:         DW_TAG_structure_type
+                      DW_AT_name	("Range<i64>")
+                      DW_AT_byte_size	(0x10)
+                      DW_AT_accessibility	(DW_ACCESS_public)
+                      DW_AT_alignment	(8)
+
+0x00000d58:           DW_TAG_template_type_parameter
+                        DW_AT_type	(0x00000da7 "i64")
+                        DW_AT_name	("Idx")
+
+0x00000d61:           DW_TAG_member
+                        DW_AT_name	("start")
+                        DW_AT_type	(0x00000da7 "i64")
+                        DW_AT_alignment	(8)
+                        DW_AT_data_member_location	(0x00)
+                        DW_AT_accessibility	(DW_ACCESS_public)
+
+0x00000d6d:           DW_TAG_member
+                        DW_AT_name	("end")
+                        DW_AT_type	(0x00000da7 "i64")
+                        DW_AT_alignment	(8)
+                        DW_AT_data_member_location	(0x08)
+                        DW_AT_accessibility	(DW_ACCESS_public)
+
+0x00000d79:           NULL
+
+0x00000d7a:         DW_TAG_structure_type
+                      DW_AT_name	("Range<i32>")
+                      DW_AT_byte_size	(0x08)
+                      DW_AT_accessibility	(DW_ACCESS_public)
+                      DW_AT_alignment	(4)
+
+0x00000d82:           DW_TAG_template_type_parameter
+                        DW_AT_type	(0x00000db5 "i32")
+                        DW_AT_name	("Idx")
+
+0x00000d8b:           DW_TAG_member
+                        DW_AT_name	("start")
+                        DW_AT_type	(0x00000db5 "i32")
+                        DW_AT_alignment	(4)
+                        DW_AT_data_member_location	(0x00)
+                        DW_AT_accessibility	(DW_ACCESS_public)
+
+0x00000d97:           DW_TAG_member
+                        DW_AT_name	("end")
+                        DW_AT_type	(0x00000db5 "i32")
+                        DW_AT_alignment	(4)
+                        DW_AT_data_member_location	(0x04)
+                        DW_AT_accessibility	(DW_ACCESS_public)
+
+0x00000da3:           NULL
+
+0x00000da4:         NULL
+
+0x00000da5:       NULL
+
+0x00000da6:     NULL
+
+0x00000da7:   DW_TAG_base_type
+                DW_AT_name	("i64")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x08)
+
+0x00000dae:   DW_TAG_base_type
+                DW_AT_name	("f64")
+                DW_AT_encoding	(DW_ATE_float)
+                DW_AT_byte_size	(0x08)
+
+0x00000db5:   DW_TAG_base_type
+                DW_AT_name	("i32")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x00000dbc:   NULL
